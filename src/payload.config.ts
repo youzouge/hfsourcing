@@ -1,6 +1,9 @@
 import path from 'path'
 import { fileURLToPath } from 'url'
 
+// [!code ++] Load before db pool: prefer IPv4 for Supabase on Vercel (avoid ENETUNREACH on IPv6)
+import './payload/ensureIpv4FirstDns'
+
 import { postgresAdapter } from '@payloadcms/db-postgres'
 import { lexicalEditor } from '@payloadcms/richtext-lexical'
 import { buildConfig } from 'payload'

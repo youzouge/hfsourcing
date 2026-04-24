@@ -1,19 +1,6 @@
 import 'server-only'
 import type { PoolConfig } from 'pg'
 
-// [!code modify] IPv4 DNS preference (use "dns", never "node:dns" — webpack cannot resolve node: in client fallbacks)
-let ipv4OrderApplied = false
-function applyIpv4DnsOrderOnce() {
-  if (ipv4OrderApplied) return
-  if (process.env.DATABASE_IPV4_FIRST !== '1' && process.env.DATABASE_IPV4_FIRST !== 'true') {
-    return
-  }
-  ipv4OrderApplied = true
-  // eslint-disable-next-line @typescript-eslint/no-require-imports
-  const { setDefaultResultOrder } = require('dns') as typeof import('dns')
-  setDefaultResultOrder('ipv4first')
-}
-
 function extractHost(uri: string): string {
   const m = uri.match(/@([^/?:]+)(?::\d+)?(?:\/|\?|$)/)
   return m?.[1] ?? ''
@@ -65,7 +52,6 @@ function appendConnectTimeout(uri: string, shouldAppend: boolean): string {
  * [!code modify] Avoids SELF_SIGNED_CERT_IN_CHAIN when URI carries sslmode=verify-*
  */
 export function getDatabasePoolOptions(): PoolConfig {
-  applyIpv4DnsOrderOnce()
   const raw = process.env.DATABASE_URI?.trim() ?? ''
   if (!raw) {
     return { connectionString: '' }
