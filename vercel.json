@@ -1,5 +1,6 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "pnpm install",
   "build": {
     "env": {
       "NODE_OPTIONS": "--dns-result-order=ipv4first"

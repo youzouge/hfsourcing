@@ -3,24 +3,34 @@ import { getPayload } from 'payload'
 import { ExternalLink, ShieldCheck } from 'lucide-react'
 
 import config from '@payload-config'
+import { isNextBuildPhase } from '@/lib/isNextBuildPhase'
 import { Button } from '@/components/ui/button'
 
+// [!code ++] Vercel: do not SSG a page that opens Postgres; avoids build-time connect errors / log spam.
+export const dynamic = 'force-dynamic'
+
 async function getUserCount() {
+  if (isNextBuildPhase()) {
+    return { status: 'build' as const }
+  }
   try {
     const payload = await getPayload({ config })
     const { totalDocs } = await payload.count({ collection: 'users' })
-    return { ok: true as const, count: totalDocs }
+    return { status: 'ok' as const, count: totalDocs }
   } catch (error) {
-    console.warn('[Home] user count:', error)
-    return { ok: false as const, count: 0 }
+    if (process.env.NODE_ENV === 'development') {
+      console.warn('[Home] user count:', error)
+    }
+    return { status: 'error' as const }
   }
 }
 
 const HomePage = async () => {
   const result = await getUserCount()
-  const userLine = result.ok
-    ? `Users in database: ${result.count}.`
-    : 'Open /admin to finish setup and create the first user.'
+  const userLine =
+    result.status === 'ok'
+      ? `Users in database: ${result.count}.`
+      : 'Open /admin to sign in and manage content.'
 
   return (
     <main className="mx-auto flex w-full max-w-5xl flex-1 flex-col items-center justify-center gap-10 px-6 py-24 text-center">

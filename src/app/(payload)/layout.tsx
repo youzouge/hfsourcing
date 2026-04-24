@@ -6,6 +6,10 @@ import config from '@payload-config'
 import { importMap } from './admin/importMap.js'
 import './custom.scss'
 
+// [!code ++] Vercel: Payload + DB on cold can exceed default function time.
+export const maxDuration = 60
+export const dynamic = 'force-dynamic'
+
 type Args = {
   children: React.ReactNode
 }
