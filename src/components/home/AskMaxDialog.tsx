@@ -3,11 +3,12 @@
 import { zodResolver } from '@hookform/resolvers/zod'
 import { Loader2 } from 'lucide-react'
 import Link from 'next/link'
+import { useTranslations } from 'next-intl'
 import { useState, useTransition } from 'react'
 import { useForm } from 'react-hook-form'
 import { z } from 'zod'
 
-import { submitConsultationInquiry } from '@/app/(frontend)/actions/submitConsultationInquiry'
+import { submitConsultationInquiry } from '@/actions/submitConsultationInquiry'
 import { Button, type ButtonProps } from '@/components/ui/button'
 import {
   Dialog,
@@ -42,6 +43,7 @@ type AskMaxDialogProps = {
 }
 
 const AskMaxDialog = ({ className, size, variant, children }: AskMaxDialogProps) => {
+  const t = useTranslations('AskMax')
   const [isOpen, setIsOpen] = useState(false)
   const [isSuccess, setIsSuccess] = useState(false)
   const [isPending, startTransition] = useTransition()
@@ -96,27 +98,24 @@ const AskMaxDialog = ({ className, size, variant, children }: AskMaxDialogProps)
         {isSuccess ? (
           <div className="space-y-4 pt-2">
             <DialogHeader>
-              <DialogTitle>Thank you. I have your context.</DialogTitle>
-              <DialogDescription>
-                By the way, I just finished a similar case study last week. Here is the sample
-                report. You might find it useful for your future quality control.
-              </DialogDescription>
+              <DialogTitle>{t('successTitle')}</DialogTitle>
+              <DialogDescription>{t('successDescription')}</DialogDescription>
             </DialogHeader>
             <Button
               asChild
               className="h-10 w-full rounded-md bg-foreground text-background hover:bg-foreground/90"
             >
               <Link href={reportHref} download>
-                Download sample report (PDF)
+                {t('downloadReport')}
               </Link>
             </Button>
             <p className="text-sm text-muted-foreground">
-              Prefer a human channel?{' '}
+              {t('preferHuman')}{' '}
               <a
                 className="font-medium text-foreground underline-offset-4 hover:underline"
                 href={`mailto:${defaultEmail}`}
               >
-                Email
+                {t('email')}
               </a>
               {' · '}
               <a
@@ -125,26 +124,23 @@ const AskMaxDialog = ({ className, size, variant, children }: AskMaxDialogProps)
                 rel="noreferrer"
                 target="_blank"
               >
-                WhatsApp
+                {t('whatsapp')}
               </a>
             </p>
           </div>
         ) : (
           <form className="space-y-4 pt-1" onSubmit={handleSubmit(onSubmit)} noValidate>
             <DialogHeader>
-              <DialogTitle>Before we jump on a call</DialogTitle>
-              <DialogDescription>
-                Two short answers help me see whether you are a serious buyer, and how I can help
-                in the first reply.
-              </DialogDescription>
+              <DialogTitle>{t('beforeCallTitle')}</DialogTitle>
+              <DialogDescription>{t('beforeCallDescription')}</DialogDescription>
             </DialogHeader>
             <div className="space-y-2">
-              <Label htmlFor="sourcing">What are you sourcing?</Label>
+              <Label htmlFor="sourcing">{t('labelSourcing')}</Label>
               <Textarea
                 id="sourcing"
                 className="min-h-[80px] resize-y"
                 autoComplete="off"
-                placeholder="e.g. stainless steel cutlery, MOQ 2,000 sets — or paste a factory link or name"
+                placeholder={t('placeholderSourcing')}
                 {...register('sourcing')}
                 aria-invalid={Boolean(errors.sourcing)}
               />
@@ -153,11 +149,11 @@ const AskMaxDialog = ({ className, size, variant, children }: AskMaxDialogProps)
               ) : null}
             </div>
             <div className="space-y-2">
-              <Label htmlFor="headache">What is your biggest headache right now?</Label>
+              <Label htmlFor="headache">{t('labelHeadache')}</Label>
               <Textarea
                 id="headache"
                 className="min-h-[100px] resize-y"
-                placeholder="Factory ghosting, wrong samples, AQL fail last shipment…"
+                placeholder={t('placeholderHeadache')}
                 {...register('headache')}
                 aria-invalid={Boolean(errors.headache)}
               />
@@ -178,14 +174,14 @@ const AskMaxDialog = ({ className, size, variant, children }: AskMaxDialogProps)
               {isPending ? (
                 <>
                   <Loader2 className="size-4 animate-spin" />
-                  Sending
+                  {t('sending')}
                 </>
               ) : (
-                'Send to Max'
+                t('submit')
               )}
             </Button>
             <p className="text-center text-xs text-muted-foreground">
-              You can also reach out without the form:{' '}
+              {t('reachWithoutForm')}{' '}
               <a className="underline-offset-2 hover:underline" href={`mailto:${defaultEmail}`}>
                 {defaultEmail}
               </a>

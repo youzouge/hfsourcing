@@ -1,0 +1,23 @@
+import { hasLocale } from 'next-intl'
+import { getRequestConfig } from 'next-intl/server'
+
+import { routing } from './routing'
+
+// [!code ++] Add `src/messages/{locale}.json` per language; fall back to English.
+async function loadMessages(locale: string) {
+  try {
+    return (await import(`../messages/${locale}.json`)).default
+  } catch {
+    return (await import('../messages/en.json')).default
+  }
+}
+
+export default getRequestConfig(async ({ requestLocale }) => {
+  const requested = await requestLocale
+  const locale = hasLocale(routing.locales, requested) ? requested : routing.defaultLocale
+
+  return {
+    locale,
+    messages: await loadMessages(locale),
+  }
+})

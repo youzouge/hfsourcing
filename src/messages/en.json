@@ -1,0 +1,394 @@
+{
+  "Meta": {
+    "title": "HF Sourcing | Independent China Factory Audit & Inspection",
+    "description": "Independent factory audits, AQL inspections, and crisis negotiation in China. Flat rates, zero factory kickbacks, and a free first-line sanity check for serious buyers."
+  },
+  "Nav": {
+    "brand": "HF Sourcing",
+    "tagline": "On-site in Greater Bay, China",
+    "roadmap": "Roadmap",
+    "trust": "Trust",
+    "services": "Services",
+    "reviews": "Reviews",
+    "sampleReport": "Sample report",
+    "bookFrom299": "Book from $299"
+  },
+  "Language": {
+    "label": "Language"
+  },
+  "Home": {
+    "announcement": "Buyer-side only · Flat-rate inspection · 24h reporting · No factory kickbacks",
+    "localTeamLine": "I am your local team, not their partner.",
+    "g2": {
+      "jumpTo": "Jump to",
+      "starsRated": "Rated 5 out of 5"
+    },
+    "hero": {
+      "badge": "Sourcing · Samples · AQL QC · FBA / DDP",
+      "title": "Find, verify, and ship from China without guessing who paid your inspector.",
+      "subtitle": "From sourcing & verification to sample hub, AQL on the line, and FBA / DDP out — one local team, flat or quoted prices, 24-hour reporting, and zero factory-side income to me. Compare the stack, not a generic inspection PDF.",
+      "searchPrefix": "I need",
+      "searchExample": "a factory audit in Shenzhen before I wire 30% deposit — can you be there this week?",
+      "searchNote": "That is a real first message. Free triage → paid onsite when you are ready.",
+      "ctaSample": "Get sample report",
+      "ctaBook": "Book QC from $299",
+      "imageAlt": "Factory floor — on-site evidence for your report",
+      "heroPanelBuyer": "Buyer satisfaction",
+      "rating": "4.9 / 5",
+      "ratingSub": "From direct buyer feedback (sample)",
+      "onTheFloor": "On the floor",
+      "onTheFloorSub": "Real photos, AQL logic, fail/pass you can show your bank."
+    },
+    "services": {
+      "title": "The full China stack — compare like a G2 grid",
+      "lead": "No hidden \"factory marketing fees\" — what you see is what funds the work. Start with a free line in, then add paid modules as your PO and risk grow.",
+      "pricingNote": "Updated pricing · USD · + freight or custom where noted",
+      "entry": {
+        "heading": "The entry — free + verification",
+        "lead": "Most buyers start with a 10-minute sanity check, then go onsite before real money moves."
+      },
+      "roadmap": {
+        "heading": "The roadmap",
+        "lead": "Sourcing → samples → QC on the line → logistics & FBA. Four modules, one relationship — your team on the ground, not the factory’s."
+      },
+      "stages": {
+        "heading": "Then: samples, QC & e-com / FBA",
+        "lead": "When you are past the first supplier list, the real work is consolidation, in-line control, and getting shelf-ready without a second project manager. Again:"
+      }
+    },
+    "freeCard": {
+      "badge": "Start here — free",
+      "satisfaction": "Satisfaction — we earn the next step",
+      "includedHeading": "What's included",
+      "whyFreeHeading": "Why it's free"
+    },
+    "paidModuleUi": {
+      "recommendedBadge": "Recommended first paid step",
+      "coreGateBadge": "Core gate — QC",
+      "whenToUse": "When to use it",
+      "featuredSub": "Where most importers start paying for peace of mind",
+      "getQuote": "Get a custom quote"
+    },
+    "g2Pills": [
+      {
+        "label": "Free plan",
+        "href": "#entry"
+      },
+      {
+        "label": "Verification $249",
+        "href": "#entry"
+      },
+      {
+        "label": "Samples $99+",
+        "href": "#stages-234"
+      },
+      {
+        "label": "QC $299",
+        "href": "#stages-234"
+      },
+      {
+        "label": "FBA & logistics",
+        "href": "#stages-234"
+      }
+    ],
+    "processSteps": [
+      {
+        "step": "01",
+        "label": "Sourcing & verification",
+        "detail": "Backstop bad actors · negotiate with leverage"
+      },
+      {
+        "step": "02",
+        "label": "Sample consolidation",
+        "detail": "One hub · unbox · compare before you order big"
+      },
+      {
+        "step": "03",
+        "label": "QC & line control",
+        "detail": "AQL · timelines · on-floor disputes"
+      },
+      {
+        "step": "04",
+        "label": "E-com & FBA",
+        "detail": "Prep · DDP · private label"
+      }
+    ],
+    "heroStats": [
+      {
+        "value": "10+ yrs",
+        "sub": "Supply-chain systems"
+      },
+      {
+        "value": "24h",
+        "sub": "Report SLA (standard runs)"
+      },
+      {
+        "value": "0%",
+        "sub": "Factory-side fees to me"
+      },
+      {
+        "value": "100%",
+        "sub": "Client-paid = client-first"
+      }
+    ],
+    "freeInsider": {
+      "title": "The \"China Insider\" Friend (100% Free)",
+      "slogan": "Your First Real Connection on the Ground.",
+      "priceLine": "Free",
+      "whyFree": "I've spent 10 years in the system, and I'm tired of seeing honest Western buyers getting scammed or frustrated. I want to build a relationship first. If I can save you from a bad deal with a 10-minute chat, I've done my job as a friend. If you need me for an on-site audit later, you know where to find me.",
+      "included": [
+        {
+          "title": "Quick Factory Check",
+          "body": "Send me a link or a name; I will tell you if they look like a real factory or a \"bedroom\" trader in 5 minutes."
+        },
+        {
+          "title": "Cultural & Business Translator",
+          "body": "Confused by a factory's \"vague\" reply? I translate the real meaning behind their Chinese business talk."
+        },
+        {
+          "title": "General Sourcing Advice",
+          "body": "Tips on shipping, local holidays, or market trends. No strings attached."
+        }
+      ]
+    },
+    "askMaxCta": "Ask Max — form / WhatsApp / email",
+    "paidModules": [
+      {
+        "id": "sourcing-verification",
+        "title": "Strategic Sourcing & Verification",
+        "integrator": "Supplier due diligence + price negotiation on the ground.",
+        "focus": "Find the right supplier, get the right price — before you send real money.",
+        "price": "$249",
+        "unit": "/ audit",
+        "whenToBook": "Before you lock terms or pay a large deposit to a new vendor.",
+        "isEntry": true,
+        "isFeatured": false,
+        "bullets": [
+          {
+            "title": "Real-world Verification",
+            "body": "I don't trust Alibaba photos. I go onsite to verify their actual production capacity and legal DNA."
+          },
+          {
+            "title": "Price Negotiation",
+            "body": "Using local knowledge and native language to cut through middleman markups and secure the best MOQs for you."
+          },
+          {
+            "title": "Factory vs. Trader",
+            "body": "I expose \"bedroom\" trading companies posing as mega-factories."
+          }
+        ]
+      },
+      {
+        "id": "sample-consolidation",
+        "title": "Smart Sample Consolidation",
+        "integrator": "Inbound sample hub + unboxing + shortlist.",
+        "focus": "Save on freight, kill bad samples early.",
+        "price": "$99",
+        "unit": "+ freight · (or per item — ask for a batch quote)",
+        "whenToBook": "When you are comparing 2+ suppliers and shipping samples from China is bleeding your margin.",
+        "isEntry": false,
+        "isFeatured": false,
+        "bullets": [
+          {
+            "title": "70% Logistics Saving",
+            "body": "Send 5 factory samples to my hub. I combine them into ONE parcel to slash your international freight costs."
+          },
+          {
+            "title": "Unboxing Reviews",
+            "body": "High-res video reviews of every sample before they leave China. If it's trash, we kill it early."
+          },
+          {
+            "title": "Quality Comparison",
+            "body": "Side-by-side analysis to help you pick the winning supplier faster."
+          }
+        ]
+      },
+      {
+        "id": "professional-qc",
+        "title": "Professional Quality Control (QC)",
+        "integrator": "Pre-shipment inspection + line monitoring + on-site dispute handling.",
+        "focus": "Reject bad goods, reject silent delays — before the 70% balance.",
+        "price": "$299",
+        "unit": "/ man-day · Greater Bay Area",
+        "whenToBook": "Before final payment and before goods leave your supplier — every serious PO should pass this gate.",
+        "isEntry": false,
+        "isFeatured": true,
+        "bullets": [
+          {
+            "title": "On-site AQL Inspection",
+            "body": "Full check on functionality, packaging, and quantities before you pay the final 70%."
+          },
+          {
+            "title": "Timeline Monitoring",
+            "body": "I'm the \"headache\" the factory fears. I monitor production lines so they don't miss your shipping date."
+          },
+          {
+            "title": "Dispute Resolution",
+            "body": "If issues are found, I handle the rework negotiation on the factory floor, so you don't have to argue across the ocean."
+          }
+        ]
+      },
+      {
+        "id": "ecom-fba",
+        "title": "E-com Logistics & FBA Prep",
+        "integrator": "FBA prep + consolidated export + private label touches.",
+        "focus": "Shelf-ready, compliant, and branded — without a second project manager.",
+        "price": "Custom",
+        "unit": "quote (volume-based)",
+        "whenToBook": "When the PO is done and you need China-side prep + door delivery — tell me volume and channels.",
+        "isEntry": false,
+        "isFeatured": false,
+        "bullets": [
+          {
+            "title": "FBA Compliance",
+            "body": "Labeling, bagging, and palletizing that meets strict Amazon / Walmart requirements."
+          },
+          {
+            "title": "Global DDP Shipping",
+            "body": "Sea, air, or rail. We handle customs and taxes so your goods arrive shelf-ready."
+          },
+          {
+            "title": "Private Labeling",
+            "body": "Custom inserts, thank-you cards, and branded packaging to build your moat."
+          }
+        ]
+      }
+    ],
+    "trustPillars": [
+      {
+        "iconKey": "shield",
+        "title": "You pay. I work for you.",
+        "body": "No factory commissions. No referral kickbacks. The invoice is between you and HF Sourcing."
+      },
+      {
+        "iconKey": "ban",
+        "title": "Zero conflict of interest",
+        "body": "If the supplier offers me a cut, you will know — and I walk away from that relationship."
+      },
+      {
+        "iconKey": "fileDown",
+        "title": "Evidence you can use",
+        "body": "Photos, line status, and AQL logic you can forward to your CEO, bank, or lawyer."
+      },
+      {
+        "iconKey": "clock",
+        "title": "Fast, flat terms",
+        "body": "Published prices. 24-hour reporting on standard inspections so you can decide before the wire."
+      }
+    ],
+    "comparisonItems": [
+      {
+        "iconKey": "xCircle",
+        "label": "Big inspection brands",
+        "text": "Tick-box reports from people who don't understand your product or margin.",
+        "tone": "negative"
+      },
+      {
+        "iconKey": "triangleAlert",
+        "label": "\"Free\" sourcing agents",
+        "text": "Paid under the table by factories. They will not surface defects that hurt their commission.",
+        "tone": "negative"
+      },
+      {
+        "iconKey": "checkCircle2",
+        "label": "HF Sourcing — Max Huang",
+        "text": "10 years in supply-chain systems. Paid only by you. I report what risks your money — not what makes the supplier happy.",
+        "tone": "positive"
+      }
+    ],
+    "integrity": {
+      "badge": "Trust & integrity",
+      "title": "Why the incentive line matters",
+      "lead": "B2B marketplaces are built on transparent reviews. Your QC is no different: who funds the person in the WeChat group?"
+    },
+    "compareStrip": {
+      "title": "Same service — who gets paid twice?",
+      "lead": "G2 differentiates by crowd truth. I differentiate by economics: one payer, one loyalty."
+    },
+    "people": {
+      "title": "People, not a logo, buy trust.",
+      "body": "Replace the stock image with a clear photo of you. On G2, people filter by product — here they choose who will walk into a factory and tell them the hard truth.",
+      "imageAlt": "Your own photo: coffee, city street, Dongguan or Shenzhen"
+    },
+    "proof": {
+      "title": "Reviews from buyers",
+      "lead": "Structured like a marketplace review — with outcomes you can measure.",
+      "verified": "Verified",
+      "channel": "WhatsApp / email"
+    },
+    "proofCards": [
+      {
+        "name": "David R.",
+        "country": "United States",
+        "message": "Max found a welding defect our supplier never mentioned. The report gave us enough evidence to stop the balance payment.",
+        "result": "$18,400 shipment protected"
+      },
+      {
+        "name": "Sophie M.",
+        "country": "Germany",
+        "message": "The factory kept saying everything was ready. Max went onsite, counted cartons, and showed the order was only 62% finished.",
+        "result": "Production delay exposed"
+      },
+      {
+        "name": "Marcus T.",
+        "country": "Australia",
+        "message": "Not a checklist inspector. He explained why the defects happened and how to push the supplier into rework.",
+        "result": "Rework completed before loading"
+      }
+    ],
+    "reviewMeta": [
+      {
+        "initials": "DR",
+        "when": "Mar 2024"
+      },
+      {
+        "initials": "SM",
+        "when": "Jan 2025"
+      },
+      {
+        "initials": "MT",
+        "when": "Nov 2024"
+      }
+    ],
+    "reportCta": {
+      "title": "See a full report before you book",
+      "lead": "Photo evidence, AQL, defect list — the same document you can forward internally.",
+      "button": "Download sample report (PDF)"
+    }
+  },
+  "Footer": {
+    "about": "Verification, sample hub, line QC, and FBA / export prep in South China. No factory funding — compare with confidence.",
+    "servicesTitle": "Services",
+    "trustTitle": "Trust",
+    "contactTitle": "Contact",
+    "region": "Greater Bay Area, China",
+    "copyright": "Inspired by market-style B2B clarity (e.g. G2). Not affiliated with G2, Inc.",
+    "links": {
+      "freePlan": "Free plan",
+      "verification249": "Sourcing & verification $249",
+      "samples": "Samples from $99 + freight",
+      "qc": "QC from $299 / day",
+      "fba": "FBA & logistics (quote)",
+      "integrity": "Integrity & incentives",
+      "reviews": "Reviews",
+      "sampleReport": "Sample report"
+    }
+  },
+  "AskMax": {
+    "successTitle": "Thank you. I have your context.",
+    "successDescription": "By the way, I just finished a similar case study last week. Here is the sample report. You might find it useful for your future quality control.",
+    "downloadReport": "Download sample report (PDF)",
+    "preferHuman": "Prefer a human channel?",
+    "email": "Email",
+    "whatsapp": "WhatsApp",
+    "beforeCallTitle": "Before we jump on a call",
+    "beforeCallDescription": "Two short answers help me see whether you are a serious buyer, and how I can help in the first reply.",
+    "labelSourcing": "What are you sourcing?",
+    "labelHeadache": "What is your biggest headache right now?",
+    "placeholderSourcing": "e.g. stainless steel cutlery, MOQ 2,000 sets — or paste a factory link or name",
+    "placeholderHeadache": "Factory ghosting, wrong samples, AQL fail last shipment…",
+    "sending": "Sending",
+    "submit": "Send to Max",
+    "reachWithoutForm": "You can also reach out without the form:"
+  }
+}
