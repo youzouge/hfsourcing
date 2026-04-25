@@ -3,10 +3,12 @@ import '../globals.css'
 
 export const metadata: Metadata = {
   title: {
-    default: 'HFsourcing',
+    default: 'HF Sourcing | Independent China Factory Audit & Inspection',
     template: '%s | HFsourcing',
   },
-  description: 'HFsourcing — Next.js 16 + Payload CMS 3 platform.',
+  // [!code modify] Public metadata now matches the B2B sourcing service positioning.
+  description:
+    'Independent factory audits, AQL inspections, and crisis negotiation in China. Flat rates, zero factory kickbacks, and a free first-line sanity check for serious buyers.',
 }
 
 interface FrontendLayoutProps {

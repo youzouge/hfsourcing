@@ -7,6 +7,7 @@ import { buildConfig } from 'payload'
 import sharp from 'sharp'
 
 // [!code modify] ESM CLI (payload migrate) requires explicit file extensions.
+import { ConsultationInquiries } from './payload/collections/ConsultationInquiries.ts'
 import { Users } from './payload/collections/Users.ts'
 import { Media } from './payload/collections/Media.ts'
 import { getDatabasePoolOptions } from './payload/getDatabasePoolOptions.ts'
@@ -34,7 +35,7 @@ export default buildConfig({
       titleSuffix: '- HFsourcing',
     },
   },
-  collections: [Users, Media],
+  collections: [Users, Media, ConsultationInquiries],
   editor: lexicalEditor(),
   secret: resolvePayloadSecret(),
   typescript: {
